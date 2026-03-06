@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – Simple Browser</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0f1117;
+      --muted:  #5a5f72;
+      --line:   #e2e5ef;
+      --accent: #1a73e8;
+      --bg:     #f8f9fc;
+      --white:  #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1.2rem;
+    }
+
+    .globe {
+      width: 10px; height: 10px;
+      border: 1.5px solid #fff;
+      border-radius: 50%;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .globe::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 0; right: 0;
+      height: 1.5px;
+      background: #fff;
+      transform: translateY(-50%);
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 0.6rem;
+    }
+
+    header p.subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 680px;
+      margin: 3rem auto;
+      padding: 0 1.5rem 5rem;
+    }
+
+    /* ── Summary card ── */
+    .summary {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+    }
+
+    .summary strong {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ── Sections ── */
+    section {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    section h2 .icon {
+      font-size: 1rem;
+    }
+
+    section p, section li {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    section ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section ul li { margin-bottom: 0.3rem; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+      padding: 2rem;
+      border-top: 1px solid var(--line);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Effective date chip ── */
+    .date-chip {
+      display: inline-block;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      padding: 0.2rem 0.8rem;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-badge">
+    <span class="globe"></span>
+    Simple Browser
+  </div>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Plain language. No legalese.</p>
+  <span class="date-chip">Effective: March 6, 2025</span>
+</header>
+
+<main>
+
+  <div class="summary">
+    <strong>The short version</strong>
+    Simple Browser does not collect, store, transmit, or share any personal data whatsoever. 
+    No accounts. No tracking. No analytics. Your browsing stays entirely on your device.
+  </div>
+
+  <section>
+    <h2><span class="icon">📦</span> What We Collect</h2>
+    <p>
+      <strong>Nothing.</strong> Simple Browser does not collect any personal information, 
+      device identifiers, usage statistics, crash reports, or any other data from you or your device.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔒</span> Your Browsing Data</h2>
+    <p>
+      All browsing activity — including the websites you visit, your browsing history, 
+      cookies, and cached content — is stored <em>locally on your device only</em> using 
+      Android's built-in WebView. We have no access to this data and it is never sent to us.
+    </p>
+    <ul>
+      <li>Browsing history stays on your device</li>
+      <li>Cookies are managed by Android WebView locally</li>
+      <li>You can clear all data from within the app at any time</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🌐</span> Third-Party Websites</h2>
+    <p>
+      Simple Browser is a tool to access websites on the internet. When you visit a website, 
+      that website may collect data according to its own privacy policy. We have no control 
+      over and no responsibility for the privacy practices of any third-party websites you visit.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🤝</span> Data Sharing</h2>
+    <p>
+      We do not share any data with third parties — because we don't collect any data in the first place.
+      There are no advertisers, analytics providers, or data brokers involved with this app.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>
+      If this privacy policy changes in the future, the updated version will be posted at this URL 
+      with a new effective date. We encourage you to review it periodically.
+    </p>
+  </section>
+
+
+
+</main>
+
+<footer>
+  &copy; 2025 Simple Browser &nbsp;·&nbsp; All rights reserved
+</footer>
+
+</body>
+</html>
